@@ -1,0 +1,33 @@
+{
+  "name": "esm-template",
+  "version": "0.0.1",
+  "description": "A template to make ESM projects using TS",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "scripts": {
+    "test": "ava",
+    "start": "esmo ./src/index.mts",
+    "build": "rm -rf ./dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleep-written/esm-template.git"
+  },
+  "keywords": [
+    "template",
+    "esm",
+    "ts"
+  ],
+  "author": "sleep-written",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sleep-written/esm-template/issues"
+  },
+  "homepage": "https://github.com/sleep-written/esm-template#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "ava": "^4.2.0",
+    "esno": "^0.14.1",
+    "typescript": "^4.6.3"
+  }
+}
