@@ -1,5 +1,9 @@
 node_modules
+tsconfig.*.tsbuildinfo
+
 dist
+!dist/cjs/package.json
+!dist/esm/package.json
 
 *config.json
 !tsconfig.json

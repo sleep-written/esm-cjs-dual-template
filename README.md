@@ -1,14 +1,17 @@
-# ESM Template
+# ESM/CJS dual package template
 
-This repository is a template to make pure ESM projects using typescript. It contains the minimun required packages to work, to test and to deploy.
+This repository is a template to make NPM packages in __ESM__ and __CommonJS__. This repositoy includes:
+- The configuration files required and ready to develop in.
+- Output in ESM and CommonJS.
+- Unit testing.
 
 ## Dependencies
 
 - __[typescript](https://www.npmjs.com/package/typescript)__: The language server and CLI for typescript.
-- __[esno](https://www.npmjs.com/package/esno)__: A package to execute TS files without transpile.
+- __[ts-node](https://www.npmjs.com/package/ts-node)__: A package to execute TS files without transpile.
 - __[ava](https://www.npmjs.com/package/ava)__: Unit testing with native support to ESM.
 
-## How to start
+## How to begin
 
 First install the dependencies:
 ```bash
@@ -20,7 +23,7 @@ If you want to execute the project without transpiling, use:
 npm run start
 ```
 
-If do you want to generate the `*.mjs` files:
+If do you want to transpile your project:
 ```bash
 npm run build
 ```
@@ -28,4 +31,9 @@ npm run build
 To execute unit testing:
 ```bash
 npm run test
+```
+
+To execute `./src/index.ts` (as ESM):
+```bash
+npm run start
 ```
