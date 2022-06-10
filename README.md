@@ -13,27 +13,24 @@ This repository is a template to make NPM packages in __ESM__ and __CommonJS__. 
 
 ## How to begin
 
-First install the dependencies:
-```bash
-npm i
+Executing this script without arguments returns the list of available commands:
+```sh
+./package.sh
 ```
 
-If you want to execute the project without transpiling, use:
-```bash
-npm run start
-```
+## Available commands
 
-If do you want to transpile your project:
-```bash
-npm run build
-```
-
-To execute unit testing:
-```bash
-npm run test
-```
-
-To execute `./src/index.ts` (as ESM):
-```bash
-npm run start
-```
+- `./package.sh begin`
+    > Initialize the project generating a new `package.json` file and installing the dev-dependencies.
+    
+- `./package.sh clean`
+    > Deletes `./dist` folder, and all `./**/*.tsbuildinfo` files.
+    
+- `./package.sh build`
+    > Transpile the entire project.
+    
+- `./package.sh watch`
+    > Transpile and watch the entire project.
+    
+- `./package.sh test`
+    > Test your  project.
