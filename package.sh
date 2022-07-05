@@ -48,7 +48,7 @@ case $1 in
         ;;
 
     watch)
-        echo \> Build & watch project...
+        echo \> "Build & watch project..."
         fn_prepare
         npx tsc --build ./tsconfig.build.json --watch
         fn_cleanup
